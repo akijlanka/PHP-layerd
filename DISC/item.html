@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>POS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">POS System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Dashboard
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="customer.html">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="item.html">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order.html">Order</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Page Content -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <div class="nav-side-menu">
+                <div class="brand">POS System</div>
+                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                <div class="menu-list">
+                    <ul id="menu-content" class="menu-content collapse out">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                            </a>
+                        </li>
+                        <li  data-toggle="collapse" data-target="#products" class="" id="customer">
+                            <a href="customer.html" ><i class="fa fa-gift fa-lg"></i> Customer <span class="arrow"></span></a>
+                        </li>
+                        <li data-toggle="collapse" data-target="#service" class="collapsed" id="item">
+                            <a href="item.html" ><i class="fa fa-globe fa-lg"></i> Item <span class="arrow"></span></a>
+                        </li>
+                        <li data-toggle="collapse" data-target="#new" class="collapsed" id="order">
+                            <a href="order.html" ><i class="fa fa-car fa-lg"></i> Order <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse" id="new">
+                            <li>New New 1</li>
+                            <li>New New 2</li>
+                            <li>New New 3</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-10">
+            <section id="itm">
+                <div class="a1" style="margin-left: 50px">
+                    <div class="card" style="margin-top: 20px">
+                        <div class="card-header">
+                            Item
+                        </div>
+                        <div class="card-body">
+                            <form id="myForm">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Item Code</label>
+                                        <input type="text" class="form-control" name="iid" placeholder="Item code">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Item Name</label>
+                                        <input type="text" class="form-control" name="name" placeholder="Item Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Price</label>
+                                    <input type="text" class="form-control" name="price" placeholder="Price">
+                                </div>
+                                <div class="form-group">
+                                    <label>Qty</label>
+                                    <input type="text" class="form-control" name="qty" placeholder="qty">
+                                </div>
+                                <button  class="btn btn-primary" id="btnadd">Add</button>
+                                <button  class="btn btn-info" id="btnupdate">Update</button>
+                                <button  class="btn btn-danger" id="btndelete">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                    <table class="table table-hover table-dark">
+                        <thead>
+                        <tr>
+                            <th scope="col">Code</th>
+                            <th scope="col">Item Name</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                        </thead>
+                        <tbody id="customerall">
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/item_Js.js"></script>
+</body>
+
+</html>
